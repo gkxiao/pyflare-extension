@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (C) 2025 Cresset Biomolecular Discovery Ltd.
+# Copyright (C) 2025 Guangzhou Molcalx Ltd.
 # Released under CC-BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
-# Originally downloaded from https://gitlab.com/cresset
+# Originally downloaded from https://github.com/gkxiao/flare-extension
 """Calculates the 3D shape similarity of all ligands to the selected ligands.
 
 Ribbon Controls:
