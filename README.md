@@ -9,4 +9,6 @@
    <li>remoteShapeRings_ext.py</li>
    <p>Perform shape-based sreening against Peter Ertl's 4M ring systems on a remote SLURM server, using the selected ligand as the query.</p>
    <p>Peter Ertl. (2024) Database of 4 Million Medicinal Chemistry-Relevant Ring Systems. Available at: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01812. </p>
+   <li>SASA_ext.py</li>
+   <p>Calculate three SASA values for the ligand based on the ligand and its associating protein: free SASA, bound SASA and buried SASA.Three columns will be added into ligand table: SASA_free, SASA_bound and SASA_buried.</p>  
 </ol>
