@@ -33,6 +33,7 @@ def predict_herg(smiles):
         "\n Drug SMILES:"
     )
     response = llm.invoke(task + " " + smiles + "\n Answer:")
+    # print(f"Model response: {response}")
     # Using regex to extract prediction result (0 or 1)
     """
     match = re.search(r'\b([01])\b', response)
@@ -41,7 +42,6 @@ def predict_herg(smiles):
     else:
         return "N/A"
     """
-    print(f"Model response: {response}")
 
     # Extract prediction based on actual response format
     if '1' in response:
