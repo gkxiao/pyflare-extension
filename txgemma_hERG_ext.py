@@ -21,7 +21,7 @@ def predict_herg(smiles):
     port = "11434"
     llm = OllamaLLM(
         base_url=f"http://{host}:{port}",
-        model="Huzderu/txgemma-27B-chat-Q8_0_GGUF:latest",
+        model="Huzderu/txgemma-predict:27b",
         temperature=0
     )
     task = (
