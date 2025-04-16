@@ -26,12 +26,15 @@ def predict_herg(smiles):
     )
     task = (
         "\n Instructions: Answer the following question about drug properties. "
-        "\n Context: All along the drug development process, one of the most frequent adverse side effects, "
-        "leading to the failure of drugs, is the cardiac arrhythmias. Such failure is mostly related to the capacity "
-        "of the drug to inhibit the human ether-à-go-go-related gene (hERG) cardiac potassium channel. "
-        "\n Question:  Given a drug SMILES string, predict whether it \n 1: is a hERG blocker 0: is not hERG blocker"
+        "\n Context: Human ether-à-go-go related gene (hERG) is crucial for "
+        "the coordination of the heart's beating. Thus, if a drug blocks "
+        "the hERG, it could lead to severe adverse effects. Therefore, "
+        "reliable prediction of hERG liability in the early stages of "
+        "drug design is quite important to reduce the risk of "
+        "cardiotoxicity-related attritions in the later development stages."
+        "\n Question:  Given a drug SMILES string, predict whether it \n 0: does not inihibit hERG  1: inhibitr hERG"
         "\n Drug SMILES:"
-    )
+   )    
     response = llm.invoke(task + " " + smiles + "\n Answer:")
     # print(f"Model response: {response}")
     # Using regex to extract prediction result (0 or 1)
