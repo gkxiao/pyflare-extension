@@ -32,7 +32,7 @@ def predict_herg(smiles):
         "reliable prediction of hERG liability in the early stages of "
         "drug design is quite important to reduce the risk of "
         "cardiotoxicity-related attritions in the later development stages."
-        "\n Question:  Given a drug SMILES string, predict whether it \n 0: does not inihibit hERG  1: inhibitr hERG"
+        "\n Question:  Given a drug SMILES string, predict whether it \n (A) does not inihibit hERG  (B) inhibitr hERG"
         "\n Drug SMILES:"
    )    
     response = llm.invoke(task + " " + smiles + "\n Answer:")
@@ -47,9 +47,9 @@ def predict_herg(smiles):
     """
 
     # Extract prediction based on actual response format
-    if '1' in response:
-        return '1'
-    elif '0' in response:
+    if 'A' in response:
+        return '0'
+    elif 'B' in response:
         return '0'
     else:
         return 'N/A'
