@@ -13,4 +13,6 @@
    <p>Calculate three SASA values for the ligand based on the ligand and its associating protein: free SASA, bound SASA and buried SASA.Three columns will be added into ligand table: SASA_free, SASA_bound and SASA_buried.</p>
    <li>txgemma_hERG_ext.py</li>
    <p>Predicts hERG toxicity of compounds using the txgemma model via Ollama server</p>
+   <li>create_cdpkit_ar_feats_ext.py</li>
+   <p>Generate an aromactic feature based on the selected atoms</p>
 </ol>
