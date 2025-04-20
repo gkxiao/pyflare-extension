@@ -14,5 +14,5 @@
    <li>txgemma_hERG_ext.py</li>
    <p>Predicts hERG toxicity of compounds using the txgemma model via Ollama server</p>
    <li>create_cdpkit_ar_feats_ext.py</li>
-   <p>Generate an aromactic feature based on the selected atoms</p>
+   <p>Generate an aromactic feature (CDPKit or Ligandscout) based on the selected atoms</p>
 </ol>
