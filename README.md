@@ -17,4 +17,6 @@
    <p>Generate an aromactic feature (CDPKit or Ligandscout) based on the selected atoms</p>
    <li>Property Report</li>
    <p>Calculate and display a 2D drug-like properties report for the selected ligand. The report can be copied to the clipboard.</p>
+   <li>macrocycle_confgen.py</li>
+   <p>Generates a non-redundant, low-energy 3D conformer ensemble from the selected ligand.Input 3D coordinates are ignored; only molecular connectivity (via SMILES) is used.</p>
 </ol>
