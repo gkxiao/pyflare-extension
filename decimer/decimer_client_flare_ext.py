@@ -5,7 +5,7 @@ import tempfile
 import requests
 import pyperclip
 import os
-from PySide2.QtGui import QIcon
+from PySide6.QtGui import QIcon
 
 # ===== 配置 =====
 SERVER_URL = "http://172.16.1.185:5000/decimer"
